@@ -6,6 +6,26 @@ import classNames from 'classnames';
 
 function Index() {
   const [tab, setTab] = React.useState('全部');
+  const [topics, setTopics] = React.useState([]);
+
+  React.useEffect(() => {
+    async function query() {
+      const url = 'https://cnodejs.org/api/v1/topics';
+      try {
+        const res = await fetch(url)
+          .then(res => res.json());
+
+        const { success, data } = res;
+        if (success) {
+          setTopics(data);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    query();
+  }, []);
 
   const tabs = [
     { name: '全部' },
@@ -30,15 +50,13 @@ function Index() {
     )
   });
 
-  const topics = Array.from({ length: 24 })
-    .map((x, idx) => {
-      return <Cell key={idx} />
-    });
-
   return (
     <div className="home-page">
       <Pannel title={header} contentStyle={{ padding: 0 }}>
-        <div>{topics}</div>
+        <div
+          style={{ display: 'flex', flexDirection: 'column' }}>
+            {topics.map((topic, idx) => <Cell topic={topic} key={idx} />)}
+        </div>
       </Pannel>
     </div>
   );

@@ -8,8 +8,8 @@ function Index({ children }) {
     <div className="layout">
       <Header />
       <main className="main-content">
-        {children}
         <SiderBar />
+        {children}
       </main>
     </div>
   );
