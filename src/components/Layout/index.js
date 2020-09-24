@@ -1,13 +1,15 @@
 import React from 'react';
 import './index.less';
 import Header from '../Header';
+import SiderBar from '../SiderBar';
 
 function Index({ children }) {
   return (
     <div className="layout">
       <Header />
-      <main style={{ minHeight: 400 }}>
+      <main className="main-content">
         {children}
+        <SiderBar />
       </main>
     </div>
   );

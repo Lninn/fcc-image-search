@@ -1,0 +1,30 @@
+.topic-cell {
+  overflow: hidden;
+  padding: 10px;
+  border-top: 1px solid #f0f0f0;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  .user-avatar {
+    display: inline-block;
+    width: 30px;
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  .topic-count {
+    height: 16px;
+  }
+
+  .topic-title {
+    color: #888;
+
+    display: inline-block;
+    max-width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

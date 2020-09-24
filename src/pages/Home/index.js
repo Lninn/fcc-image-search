@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.less';
 import Pannel from '../../components/Pannel';
+import Cell from '../../components/Cell';
 import classNames from 'classnames';
 
 function Index() {
@@ -18,7 +19,7 @@ function Index() {
   function h(tabName) { setTab(tabName); }
 
   const header = tabs.map(({ name }) => {
-    const cls = classNames('tab', { active: name == tab });
+    const cls = classNames('tab', { active: name === tab });
     return (
       <span
         onClick={() => h(name)}
@@ -27,15 +28,17 @@ function Index() {
           {name}
       </span>
     )
-  })
+  });
+
+  const topics = Array.from({ length: 24 })
+    .map((x, idx) => {
+      return <Cell key={idx} />
+    });
 
   return (
     <div className="home-page">
-      <Pannel title={header}>
-        <div>12312</div>
-        <div>12312</div>
-        <div>12312</div>
-        <div>12312</div>
+      <Pannel title={header} contentStyle={{ padding: 0 }}>
+        <div>{topics}</div>
       </Pannel>
     </div>
   );
