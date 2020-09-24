@@ -38,7 +38,10 @@ function Index() {
   return (
     <div className="home-page">
       <Pannel title={header} contentStyle={{ padding: 0 }}>
-        <div>{topics}</div>
+        <div
+          style={{ display: 'flex', flexDirection: 'column' }}>
+            {topics}
+          </div>
       </Pannel>
     </div>
   );

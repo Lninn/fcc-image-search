@@ -8,7 +8,7 @@ function Index() {
     countOfReplies: 10,
     countOfVisits: 352,
     tab: '置顶',
-    title: '前端的按钮，在都需要与后台交互数据的情况下，什么时候用js function，什么时候用超链接呢？求各位大神指导，第一次提问',
+    title: '前端的按钮，在提端的按钮，在提端的按钮，在提端的按钮，在提端的按钮，在提端的按钮，在提端的按钮，在提问qweqeqweqweqwq',
     lastUser: {
       userId: 'czy88840616',
       avatarUrl: 'https://avatars0.githubusercontent.com/u/19824463?v=4&s=120',
@@ -18,27 +18,36 @@ function Index() {
 
   return (
     <div className="topic-cell">
-      <a className="user-avatar" href="/user">
-        <img src={data.userAvatarUrl} alt="user-avatar" />
-      </a>
 
-      <span className="topic-count">
-        <span>{data.countOfReplies}</span>
-        <span>/</span>
-        <span>{data.countOfVisits}</span>
-      </span>
+      {/* <div className="test pull-left">
+        <a className="user-avatar" href="/user">
+          <img src={data.userAvatarUrl} alt="user-avatar" />
+        </a>
 
-      <span className="topic-tab topic-tab-2">{data.tab}</span>
+        <span className="topic-count">
+          <span title="回复数">{data.countOfReplies}</span>
+          <span>/</span>
+          <span title="点击数">{data.countOfVisits}</span>
+        </span>
+      </div> */}
+      
+      <div className="wrapper-title">
+        <span className="topic-tab topic-tab-2">
+          {data.tab}
+        </span>
+        <a href="topic" className="topic-title">
+          {data.title}
+        </a>
+      </div>
 
-      <a href="topic" className="topic-title">{data.title}</a>
-
-      <a className="pull-right" href="/user">
+      {/* <a className="last-time pull-right" href="/user">
         <span className="user-avatar small-avatar">
           <img src={data.lastUser.avatarUrl} alt="user-avatar" />
         </span>
 
-        <span className="last-active-time">{data.lastUser.activeTime}</span>
-      </a>
+        <span className="last-active-time">               {data.lastUser.activeTime}
+        </span>
+      </a> */}
     </div>
   );
 }
