@@ -56,7 +56,7 @@ function Index() {
         <div
           style={{ display: 'flex', flexDirection: 'column' }}>
             {topics.map((topic, idx) => <Cell topic={topic} key={idx} />)}
-          </div>
+        </div>
       </Pannel>
     </div>
   );

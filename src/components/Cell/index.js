@@ -77,6 +77,7 @@ function Index({ topic }) {
           {title}
         </a>
       </div>
+
     </div>
   );
 }
