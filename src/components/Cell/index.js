@@ -19,7 +19,7 @@ function Index() {
   return (
     <div className="topic-cell">
 
-      {/* <div className="test pull-left">
+      <div className="topic-info pull-left">
         <a className="user-avatar" href="/user">
           <img src={data.userAvatarUrl} alt="user-avatar" />
         </a>
@@ -29,8 +29,18 @@ function Index() {
           <span>/</span>
           <span title="点击数">{data.countOfVisits}</span>
         </span>
-      </div> */}
-      
+      </div>
+
+      <a className="last-time pull-right" href="/user">
+        <span className="user-avatar small-avatar">
+          <img src={data.lastUser.avatarUrl} alt="user-avatar" />
+        </span>
+
+        <span className="last-active-time">
+          {data.lastUser.activeTime}
+        </span>
+      </a>
+
       <div className="wrapper-title">
         <span className="topic-tab topic-tab-2">
           {data.tab}
@@ -39,15 +49,6 @@ function Index() {
           {data.title}
         </a>
       </div>
-
-      {/* <a className="last-time pull-right" href="/user">
-        <span className="user-avatar small-avatar">
-          <img src={data.lastUser.avatarUrl} alt="user-avatar" />
-        </span>
-
-        <span className="last-active-time">               {data.lastUser.activeTime}
-        </span>
-      </a> */}
     </div>
   );
 }
