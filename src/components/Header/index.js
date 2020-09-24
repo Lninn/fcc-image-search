@@ -8,7 +8,7 @@ function Index() {
   return (
     <header className="app-header">
       <div className="app-header-inner">
-        <a href="#" className="logo">
+        <a href="/dev" className="logo">
           <img src="https://static2.cnodejs.org/public/images/cnodejs_light.svg" alt="logo" />
         </a>
 
