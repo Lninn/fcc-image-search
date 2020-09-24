@@ -1,10 +1,14 @@
 import React from 'react';
 import './index.less';
+import Header from '../Header';
 
-function Index() {
+function Index({ children }) {
   return (
     <div className="layout">
-      Layout
+      <Header />
+      <main>
+        {children}
+      </main>
     </div>
   );
 }
