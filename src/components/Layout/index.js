@@ -6,7 +6,7 @@ function Index({ children }) {
   return (
     <div className="layout">
       <Header />
-      <main>
+      <main style={{ minHeight: 400 }}>
         {children}
       </main>
     </div>

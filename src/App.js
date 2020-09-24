@@ -6,10 +6,7 @@ import {
 } from "react-router-dom";
 import './App.less';
 import Layout from './components/Layout'
-
-function Home() {
-  return <h2>Home</h2>;
-}
+import Home from './pages/Home'
 
 function About() {
   return <h2>About</h2>;
