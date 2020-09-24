@@ -12,7 +12,7 @@ function Index() {
     lastUser: {
       userId: 'czy88840616',
       avatarUrl: 'https://avatars0.githubusercontent.com/u/19824463?v=4&s=120',
-      activeTime: '6天以前',
+      activeTime: '6 天前',
     },
   };
 
@@ -28,15 +28,17 @@ function Index() {
         <span>{data.countOfVisits}</span>
       </span>
 
-      <span>{data.tab}</span>
+      <span className="topic-tab topic-tab-2">{data.tab}</span>
 
       <a href="topic" className="topic-title">{data.title}</a>
 
-      <a className="user-avatar" href="/user">
-        <img src={data.lastUser.avatarUrl} alt="user-avatar" />
-      </a>
+      <a className="pull-right" href="/user">
+        <span className="user-avatar small-avatar">
+          <img src={data.lastUser.avatarUrl} alt="user-avatar" />
+        </span>
 
-      <span>{data.lastUser.activeTime}</span>
+        <span className="last-active-time">{data.lastUser.activeTime}</span>
+      </a>
     </div>
   );
 }
