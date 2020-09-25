@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import Pannel from '../../components/Pannel';
+import Pannel from '../../components/pannel';
 
 function Index({ children }) {
   const header = (

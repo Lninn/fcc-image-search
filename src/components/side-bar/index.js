@@ -1,9 +1,8 @@
 import React from 'react';
 import './index.less';
-import Pannel from '../Pannel';
 import TitlePannel from '../TitlePannel';
-import AdPannel from '../AdPannel';
-import NoRepliesTopicPannel from '../NoRepliesTopicPannel';
+import AdPannel from '../ad-pannel';
+import NoRepliesTopicPannel from '../no-replies-topic-pannel';
 
 function Index({ children }) {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Pannel from '../Pannel';
+import Pannel from '../pannel';
 import { Link } from 'react-router-dom';
 
 function Index() {

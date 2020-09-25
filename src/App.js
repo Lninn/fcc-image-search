@@ -5,9 +5,9 @@ import {
   Route
 } from "react-router-dom";
 import './App.less';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
+import Layout from './components/basic-layout';
+import Home from './pages/home';
+import About from './pages/about';
 
 function Users() {
   return <h2>Users</h2>;

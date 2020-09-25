@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.less';
-import Pannel from '../../components/Pannel';
-import Cell from '../../components/Cell';
+import Pannel from '../../components/pannel';
+import Cell from '../../components/topic-cell';
 import classNames from 'classnames';
 import { queryTopics } from '../../services';
 
@@ -45,7 +45,7 @@ function Index() {
     }
 
     query();
-  }, []);
+  }, [topics.length]);
 
   const tabs = [
     { name: '全部' },

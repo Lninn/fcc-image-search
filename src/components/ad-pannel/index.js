@@ -1,6 +1,5 @@
 import React from 'react';
-import Pannel from '../Pannel';
-import { Link } from 'react-router-dom';
+import Pannel from '../pannel';
 
 function Index() {
   const ads = [
