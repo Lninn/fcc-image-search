@@ -5,17 +5,13 @@ import {
   Route
 } from "react-router-dom";
 import './App.less';
-import Layout from './components/Layout'
-import Home from './pages/Home'
-
-function About() {
-  return <h2>About</h2>;
-}
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function Users() {
   return <h2>Users</h2>;
 }
-
 
 function App() {
   return (
