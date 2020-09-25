@@ -5,6 +5,33 @@ import {
 } from "react-router-dom";
 
 function Index() {
+  const menus = [
+    {
+      name: '首页',
+      path: '/home',
+    },
+    {
+      name: '新手入门',
+      path: '/getting-started',
+    },
+    {
+      name: 'API',
+      path: '/api',
+    },
+    {
+      name: '关于',
+      path: '/about',
+    },
+    {
+      name: '登陆',
+      path: '/signin',
+    },
+    {
+      name: '注册',
+      path: '/signup',
+    },
+  ];
+
   return (
     <header className="app-header">
       <div className="app-header-inner">
@@ -18,24 +45,11 @@ function Index() {
 
         <div className="menu-wrapper">
           <ul className="menu">
-            <li>
-              <Link to="/home">首页</Link>
-            </li>
-            <li>
-              <Link to="/Doc">新手入门</Link>
-            </li>
-            <li>
-              <Link to="/About">API</Link>
-            </li>
-            <li>
-              <Link to="/About">关于</Link>
-            </li>
-            <li>
-              <Link to="/About">注册</Link>
-            </li>
-            <li>
-              <Link to="/About">登陆</Link>
-            </li>
+            {menus.map(menu => (
+              <li key={menu.name}>
+                <Link to={menu.path}>{menu.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

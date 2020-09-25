@@ -2,16 +2,13 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import './App.less';
 import Layout from './components/basic-layout';
-import Home from './pages/home';
-import About from './pages/about';
 
-function Users() {
-  return <h2>Users</h2>;
-}
+import { routes } from './router';
 
 function App() {
   return (
@@ -19,16 +16,17 @@ function App() {
       <Router>
         <Layout>
             <Switch>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/users">
-                  <Users />
-                </Route>
-                <Route path="/">
-                  <Home />
-                </Route>
-              </Switch>
+              {routes.map((route, i) => (
+                <Route
+                  key={i}
+                  path={route.path}
+                  render={props => (
+                    <route.component {...props} />
+                  )}
+                />
+              ))}
+              <Redirect from="/" to="/home" />
+            </Switch>
         </Layout>
       </Router>
     </div>
