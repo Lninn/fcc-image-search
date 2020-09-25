@@ -33,7 +33,7 @@ function Index() {
           return (
             <li key={user.id} style={{ display: 'block', color: 'gray', lineHeight: '2em' }}>
               <span style={{ width: 60, display: 'inline-block' }}>{user.score}</span>
-              <Link to={user.id}>{user.name}</Link>
+              <Link to='/user'>{user.name}</Link>
             </li>
           );
         })}
