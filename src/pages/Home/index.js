@@ -3,21 +3,41 @@ import './index.less';
 import Pannel from '../../components/Pannel';
 import Cell from '../../components/Cell';
 import classNames from 'classnames';
+import { queryTopics } from '../../services';
+
+const TOPIC_LIST = 'TOPIC_LIST';
 
 function Index() {
   const [tab, setTab] = React.useState('全部');
-  const [topics, setTopics] = React.useState([]);
+  const [topics, setTopics] = React.useState(function() {
+    try {
+      const data = JSON.parse(
+        localStorage.getItem(TOPIC_LIST)
+      );
+      if (data && data.length) {
+        return data;
+      } else {
+        return [];
+      }
+    } catch (error) {
+      return [];
+    }
+  });
 
   React.useEffect(() => {
     async function query() {
-      const url = 'https://cnodejs.org/api/v1/topics';
+      if (topics.length) {
+        return;
+      }
+      
       try {
-        const res = await fetch(url)
-          .then(res => res.json());
+        const res = await queryTopics();
 
         const { success, data } = res;
         if (success) {
           setTopics(data);
+
+          localStorage.setItem(TOPIC_LIST, JSON.stringify(data));
         }
       } catch (error) {
         console.error(error);
