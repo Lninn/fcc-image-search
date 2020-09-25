@@ -4,6 +4,7 @@ import TitlePanel from '../title-panel';
 import AdPanel from '../ad-panel';
 import NoRepliesTopicPanel from '../no-replies-topic-panel';
 import QRcodePanel from '../qrcode-panel';
+import FriendlyCommunityPanel from '../friendly-community-panel';
 
 function Index({ children }) {
   return (
@@ -11,6 +12,7 @@ function Index({ children }) {
       <TitlePanel />
       <AdPanel />
       <NoRepliesTopicPanel />
+      <FriendlyCommunityPanel />
       <QRcodePanel />
     </aside>
   );
