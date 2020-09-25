@@ -1,15 +1,17 @@
 import React from 'react';
 import './index.less';
-import TitlePannel from '../TitlePannel';
-import AdPannel from '../ad-pannel';
-import NoRepliesTopicPannel from '../no-replies-topic-pannel';
+import TitlePanel from '../title-panel';
+import AdPanel from '../ad-panel';
+import NoRepliesTopicPanel from '../no-replies-topic-panel';
+import QRcodePanel from '../qrcode-panel';
 
 function Index({ children }) {
   return (
     <aside className="side-bar">
-      <TitlePannel />
-      <AdPannel />
-      <NoRepliesTopicPannel />
+      <TitlePanel />
+      <AdPanel />
+      <NoRepliesTopicPanel />
+      <QRcodePanel />
     </aside>
   );
 }

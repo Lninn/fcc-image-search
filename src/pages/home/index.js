@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import Pannel from '../../components/pannel';
+import Panel from '../../components/panel';
 import Cell from '../../components/topic-cell';
 import classNames from 'classnames';
 import { queryTopics } from '../../services';
@@ -72,12 +72,12 @@ function Index() {
 
   return (
     <div className="home-page">
-      <Pannel title={header} contentStyle={{ padding: 0 }}>
+      <Panel title={header} contentStyle={{ padding: 0 }}>
         <div
           style={{ display: 'flex', flexDirection: 'column' }}>
             {topics.map((topic, idx) => <Cell topic={topic} key={idx} />)}
         </div>
-      </Pannel>
+      </Panel>
     </div>
   );
 }

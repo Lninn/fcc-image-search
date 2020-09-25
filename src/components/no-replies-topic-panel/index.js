@@ -1,5 +1,5 @@
 import React from 'react';
-import Pannel from '../pannel';
+import Panel from '../panel';
 import { Link } from 'react-router-dom';
 
 const TOPIC_LIST = 'TOPIC_LIST';
@@ -18,7 +18,7 @@ function Index() {
   });
 
   return (
-    <Pannel title="无人回复的话题">
+    <Panel title="无人回复的话题">
       <ul>
         {topics.map(topic => {
           return (
@@ -30,7 +30,7 @@ function Index() {
           )
         })}
       </ul>
-    </Pannel>
+    </Panel>
   );
 }
 

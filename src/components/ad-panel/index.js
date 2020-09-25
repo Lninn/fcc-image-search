@@ -1,5 +1,5 @@
 import React from 'react';
-import Pannel from '../pannel';
+import Panel from '../panel';
 
 function Index() {
   const ads = [
@@ -18,7 +18,7 @@ function Index() {
   ];
 
   return (
-    <Pannel>
+    <Panel>
       {ads.map(ad => {
         return (
           <a href="/ad" key={ad.id}>
@@ -26,7 +26,7 @@ function Index() {
           </a>
         )
       })}
-    </Pannel>
+    </Panel>
   );
 }
 

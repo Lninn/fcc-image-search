@@ -16,7 +16,7 @@ function Index(props) {
   }
 
   return (
-    <div className="pannel">
+    <div className="panel">
       {header}
       <div className="content" style={contentStyle}>
         {children}

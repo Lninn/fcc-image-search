@@ -1,10 +1,10 @@
 import React from 'react';
-import Pannel from '../pannel';
+import Panel from '../panel';
 import { Link } from 'react-router-dom';
 
 function Index() {
   return (
-    <Pannel>
+    <Panel>
       <p style={{ fontSize: 14, marginBottom: 10, color: '#333' }}>
         CNode：Node.js专业中文社区
       </p>
@@ -28,7 +28,7 @@ function Index() {
       >
         通过 GitHub 登陆
       </button>
-    </Pannel>
+    </Panel>
   );
 }
 
