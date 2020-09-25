@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.less';
+import classNames from 'classnames';
 
 function Index({ topic }) {
   // const data =  {
@@ -26,23 +27,32 @@ function Index({ topic }) {
   const tabMapping = {
     share: '分享',
     ask: '问题',
+    top: '置顶',
+    good: '精华',
+    other: '其他',
   };
 
-  function getTabName(topic) {
+  function fixTab(topic) {
     if (topic.top) {
-      return '置顶';
+      return 'top';
     }
 
     if (topic.good) {
-      return '精华';
+      return 'good';
     }
 
     if (topic.tab) {
-      return tabMapping[topic.tab];
+      return topic.tab;
     }
 
-    return '其他';
+    return 'other';
   }
+
+  const tab = fixTab(topic);
+  const tabNameCls = classNames(
+    'topic-tab',
+    { 'topic-tab-2': ['top', 'good'].includes(tab) },
+  );
 
   return (
     <div className="topic-cell">
@@ -70,8 +80,8 @@ function Index({ topic }) {
       </a>
 
       <div className="wrapper-title">
-        <span className="topic-tab topic-tab-2">
-          {getTabName(topic)}
+        <span className={tabNameCls}>
+          {tabMapping[tab]}
         </span>
         <a href="topic" className="topic-title">
           {title}
