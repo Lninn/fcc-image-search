@@ -13,7 +13,7 @@ function Index({ children }) {
 
   return (
     <div className="about-page">
-      <Panel title={header}>
+      <Panel header={header}>
         <h2>关于</h2>
         <hr />
         <p>

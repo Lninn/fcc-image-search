@@ -3,7 +3,7 @@ import Pannel from '../pannel';
 
 function Index() {
   return (
-    <Pannel title="友情社区">
+    <Pannel header="友情社区">
       友情社区
     </Pannel>
   );

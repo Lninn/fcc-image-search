@@ -72,7 +72,7 @@ function Index() {
 
   return (
     <div className="home-page">
-      <Panel title={header} contentStyle={{ padding: 0 }}>
+      <Panel header={header} contentStyle={{ padding: 0 }}>
         <div
           style={{ display: 'flex', flexDirection: 'column' }}>
             {topics.map((topic, idx) => <Cell topic={topic} key={idx} />)}

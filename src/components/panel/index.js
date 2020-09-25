@@ -2,22 +2,22 @@ import React from 'react';
 import './index.less';
 
 function Index(props) {
-  const { title, children, contentStyle } = props;
+  const { header, children, contentStyle } = props;
   
-  let header;
-  if (!title) {
-    header = null;
+  let headerCotent;
+  if (!header) {
+    headerCotent = null;
   } else {
-    header = (
+    headerCotent = (
       <div className="header">
-        {title}
+        {header}
       </div>
     );
   }
 
   return (
     <div className="panel">
-      {header}
+      {headerCotent}
       <div className="content" style={contentStyle}>
         {children}
       </div>
