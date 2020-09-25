@@ -9,3 +9,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 + 路由拦截
 
 + 页面跳转时的状态缓存
+
++ 组件加载时显示 骨架屏
