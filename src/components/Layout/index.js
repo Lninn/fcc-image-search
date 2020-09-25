@@ -7,10 +7,12 @@ function Index({ children }) {
   return (
     <div className="layout">
       <Header />
-      <main className="main-content">
+      <div className="content-wrapper">
         <SiderBar />
-        {children}
-      </main>
+        <main className="main-content">
+          {children}
+        </main>
+      </div>
     </div>
   );
 }

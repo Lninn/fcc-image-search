@@ -1,10 +1,18 @@
-.main-content {
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
-  margin-top: 15px;
+.layout {
+  .content-wrapper {
+    width: 90%;
+    margin: auto;
+    max-width: 1440px;
+    min-height: 400px;
+    margin-top: 15px;
 
-  // display: flex;
-  // flex-direction: row;
-  // gap: 15px;
+    .main-content {
+      margin-right: 310px;
+    }
+
+    .side-bar {
+      width: 290px;
+      float: right;
+    }
+  }
 }
