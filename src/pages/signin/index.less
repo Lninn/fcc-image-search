@@ -1,15 +1,27 @@
 .signin-page {
+
   .login-from {
     margin-top: 40px;
 
-    .form-control {
+    .control-group {
       display: flex;
+      font-size: 14px;
+      line-height: 32px;
 
-      & + .form-control {
+      & + .control-group {
         margin-top: 20px;
       }
 
-      .form-input {
+      &:last-child {
+        margin-bottom: 20px;
+      }
+
+      .control-label {
+        width: 160px;
+        text-align: right;
+      }
+
+      .control-input {
         margin-left: 20px;
 
         input {
@@ -19,14 +31,55 @@
           width: 300px;
           font-size: 14px;
           line-height: 2em;
+
+          &:focus {
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+            border-color: rgba(82,168,236,.8);
+          }
         }
       }
 
-      .form-label {
-        width: 160px;
-        text-align: right;
+      .btn {
+        cursor: pointer;
+        line-height: 2;
+        padding: 3px 10px;
+        border-radius: 3px;
+        transition: all .2s ease-in-out;
+      }
+
+      .login-btn {
+        color: #fff;
+        background: #08c;
+        margin-left: 180px;
+
+        &:hover {
+          background: #05c;
+        }
+      }
+      
+      .login-github-btn {
+        color: #ffffff;
+        background: #5bc0de;
+        margin-left: 10px;
+
+        &:hover {
+          background: #2f96b4;
+        }
+      }
+
+      .forget-passwd {
+        margin-left: 10px;
+        color: #778087;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
-   
+
+    .group-btn {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }
