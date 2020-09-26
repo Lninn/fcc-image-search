@@ -1,8 +1,15 @@
 import React from 'react';
+import classNames from 'classnames';
 import './index.less';
 
 function Index(props) {
-  const { header, children, contentStyle } = props;
+  const {
+    header,
+    children,
+    contentStyle,
+    className,
+    ...rest
+  } = props;
   
   let headerCotent;
   if (!header) {
@@ -15,8 +22,13 @@ function Index(props) {
     );
   }
 
+  const cls = classNames(
+    'panel',
+    className,
+  );
+
   return (
-    <div className="panel">
+    <div className={cls} {...rest}>
       {headerCotent}
       <div className="content" style={contentStyle}>
         {children}

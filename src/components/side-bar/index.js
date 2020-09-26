@@ -6,6 +6,7 @@ import NoRepliesTopicPanel from '../no-replies-topic-panel';
 import QRcodePanel from '../qrcode-panel';
 import FriendlyCommunityPanel from '../friendly-community-panel';
 import RankingPanel from '../ranking-panel';
+import AboutPanel from '../about-panel';
 
 function Index({ children }) {
   return (
@@ -16,6 +17,7 @@ function Index({ children }) {
       <FriendlyCommunityPanel />
       <RankingPanel />
       <QRcodePanel />
+      <AboutPanel />
     </aside>
   );
 }
