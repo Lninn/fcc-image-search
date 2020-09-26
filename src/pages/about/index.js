@@ -1,19 +1,12 @@
 import React from 'react';
-import './index.less';
 import Panel from '../../components/panel';
+import PagePanelTitle from '../../components/page-panel-title';
+import './index.less';
 
-function Index({ children }) {
-  const header = (
-    <div>
-      <a href="/">主页</a>
-      <span>/</span>
-      <span>关于</span>
-    </div>
-  );
-
+function Index() {
   return (
     <div className="about-page">
-      <Panel header={header}>
+      <Panel header={<PagePanelTitle pageTitle='关于' />}>
         <h2>关于</h2>
         <hr />
         <p>

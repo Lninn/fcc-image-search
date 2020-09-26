@@ -1,18 +1,11 @@
 import React from 'react';
 import Panel from '../../components/panel';
+import PagePanelTitle from '../../components/page-panel-title';
 
-function Index({ children }) {
-  const header = (
-    <div>
-      <a href="/">主页</a>
-      <span>/</span>
-      <span>注册</span>
-    </div>
-  );
-
+function Index() {
   return (
     <div className="signup-page">
-      <Panel header={header}>
+      <Panel header={<PagePanelTitle pageTitle='注册' />}>
         <p>
           注册
         </p>

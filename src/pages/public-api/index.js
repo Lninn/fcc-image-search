@@ -1,18 +1,11 @@
 import React from 'react';
 import Panel from '../../components/panel';
+import PagePanelTitle from '../../components/page-panel-title';
 
-function Index({ children }) {
-  const header = (
-    <div>
-      <a href="/">主页</a>
-      <span>/</span>
-      <span>API</span>
-    </div>
-  );
-
+function Index() {
   return (
     <div className="public-api-page">
-      <Panel header={header}>
+      <Panel header={<PagePanelTitle pageTitle='API' />}>
         <p>
           API
         </p>
