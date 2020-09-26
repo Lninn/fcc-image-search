@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.less';
-import Panel from '../../components/panel';
-import Cell from '../../components/topic-cell';
+import Panel from '@components/panel';
+import Cell from '@components/topic-cell';
 import classNames from 'classnames';
-import { queryTopics } from '../../services';
+import { queryTopics } from '@services';
 
 const TOPIC_LIST = 'TOPIC_LIST';
 

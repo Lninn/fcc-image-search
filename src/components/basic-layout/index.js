@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.less';
-import Header from '../header';
-import SiderBar from '../side-bar';
+import Header from '@components/header';
+import SiderBar from '@components/side-bar';
 
 function Index({ children }) {
   return (

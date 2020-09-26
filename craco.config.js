@@ -20,7 +20,9 @@ module.exports = {
         source: "options",
         baseUrl: "./",
         aliases: {
-          "@src": "./src"
+          "@src": "./src",
+          "@components": './src/components',
+          "@services": './src/services'
         }
       },
     },

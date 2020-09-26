@@ -1,5 +1,5 @@
 import React from 'react';
-import Panel from '../panel';
+import Panel from '@components/panel';
 
 function Index() {
   const ads = [

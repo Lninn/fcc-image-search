@@ -1,7 +1,7 @@
 import React from 'react';
-import Panel from '../panel';
+import Panel from '@components/panel';
 import { Link } from 'react-router-dom';
-import { queryRankingScore } from '../../services';
+import { queryRankingScore } from '@services';
 
 function Index() {
   const [data, setData] = React.useState([]);
