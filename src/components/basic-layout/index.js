@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.less';
 import Header from '@components/header';
+import Footer from '@components/footer';
 import SiderBar from '@components/side-bar';
 
 function Index({ children }) {
@@ -13,6 +14,7 @@ function Index({ children }) {
           {children}
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

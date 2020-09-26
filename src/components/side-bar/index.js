@@ -12,12 +12,12 @@ function Index() {
   return (
     <aside className="side-bar">
       <TitlePanel />
-      <AdPanel />
+      {/* <AdPanel />
       <NoRepliesTopicPanel />
       <FriendlyCommunityPanel />
       <RankingPanel />
       <QRcodePanel />
-      <AboutPanel />
+      <AboutPanel /> */}
     </aside>
   );
 }
