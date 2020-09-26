@@ -22,17 +22,17 @@ function Index() {
   const header = (
     <>
       积分榜
-      <Link to='/user'>TOP 100 >>></Link>
+      <Link to='/user'>TOP 100 &gt;&gt;&gt;</Link>
     </>
   );
 
   return (
-    <Panel header={header}>
+    <Panel className='ranking-panel' header={header}>
       <ol>
         {data.map(user => {
           return (
-            <li key={user.id} style={{ display: 'block', color: 'gray', lineHeight: '2em' }}>
-              <span style={{ width: 60, display: 'inline-block' }}>{user.score}</span>
+            <li key={user.id}>
+              <span>{user.score}</span>
               <Link to='/user'>{user.name}</Link>
             </li>
           );
