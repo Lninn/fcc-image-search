@@ -1,6 +1,6 @@
 import React from 'react';
-import Panel from '../../components/panel';
-import PagePanelTitle from '../../components/page-panel-title';
+import Panel from '@src/components/panel';
+import PagePanelTitle from '@src/components/page-panel-title';
 import './index.less';
 
 function Index() {
