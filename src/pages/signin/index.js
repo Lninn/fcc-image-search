@@ -5,8 +5,15 @@ import './index.less';
 import { Link } from 'react-router-dom';
 
 function LoginForm() {
+  const [username, setUsername] = React.useState('');
+  const [password, setPassword] = React.useState('');
+
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (!username || !password) {
+      alert('请填写完整的信息！');
+    }
   }
 
   return (
@@ -16,7 +23,14 @@ function LoginForm() {
           <label htmlFor='username'>用户名</label>
         </div>
         <div className="control-input">
-          <input id='username' type='text' maxLength='30' autoComplete='username' />
+          <input
+            id='username'
+            type='text'
+            maxLength='30'
+            autoComplete='username'
+            value={username}
+            onChange={e => setUsername(e.target.value)}
+          />
         </div>
       </div>
 
@@ -25,7 +39,13 @@ function LoginForm() {
           <label htmlFor='password'>密码</label>
         </div>
         <div className='control-input'>
-          <input id='password' type='password' autoComplete='current-password' />
+          <input
+            id='password'
+            type='password'
+            autoComplete='current-password'
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+          />
         </div>
       </div>
 
