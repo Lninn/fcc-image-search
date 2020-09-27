@@ -4,11 +4,13 @@ import Panel from '@components/panel';
 import Cell from '@components/topic-cell';
 import classNames from 'classnames';
 import { queryTopics } from '@services';
+import { AppContext } from '@src';
 
 const TOPIC_LIST = 'TOPIC_LIST';
 
 function Index() {
-  const [tab, setTab] = React.useState('全部');
+  const { tab, changeTab } = React.useContext(AppContext);
+
   const [topics, setTopics] = React.useState(function() {
     try {
       const data = JSON.parse(
@@ -56,7 +58,7 @@ function Index() {
     { name: '客户端测试' },
   ];
 
-  function h(tabName) { setTab(tabName); }
+  function h(tabName) { changeTab(tabName); }
 
   const header = tabs.map(({ name }) => {
     const cls = classNames('tab', { active: name === tab });
