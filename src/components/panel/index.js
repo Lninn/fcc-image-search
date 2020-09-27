@@ -1,31 +1,18 @@
-import React from 'react';
-import classNames from 'classnames';
-import './index.less';
+import React from "react";
+import classNames from "classnames";
+import "./index.less";
 
 function Index(props) {
-  const {
-    header,
-    children,
-    contentStyle,
-    className,
-    ...rest
-  } = props;
-  
+  const { header, children, contentStyle, className, ...rest } = props;
+
   let headerCotent;
   if (!header) {
     headerCotent = null;
   } else {
-    headerCotent = (
-      <div className="header">
-        {header}
-      </div>
-    );
+    headerCotent = <div className="header">{header}</div>;
   }
 
-  const cls = classNames(
-    'panel',
-    className,
-  );
+  const cls = classNames("panel", className);
 
   return (
     <div className={cls} {...rest}>

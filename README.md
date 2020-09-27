@@ -2,12 +2,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Cnode clone
 
-+ main cotent and sidebar layout sl
+- main cotent and sidebar layout sl
 
-+ topic cell layout
+- topic cell layout
 
-+ 路由拦截
+- 路由拦截
 
-+ 页面跳转时的状态缓存
+- 页面跳转时的状态缓存
 
-+ 组件加载时显示 骨架屏
+- 组件加载时显示 骨架屏

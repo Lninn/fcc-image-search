@@ -1,9 +1,9 @@
 function request(url) {
-  return fetch(url).then(res => res.json());
+  return fetch(url).then((res) => res.json());
 }
 
 export function queryTopics() {
-  const url = 'https://cnodejs.org/api/v1/topics';
+  const url = "https://cnodejs.org/api/v1/topics";
   return request(url);
 }
 
@@ -12,27 +12,27 @@ export function queryRankingScore() {
     const list = [
       {
         id: 1,
-        name: 'sltondfe',
+        name: "sltondfe",
         score: 34903,
       },
       {
         id: 2,
-        name: 'sltfjuone',
+        name: "sltfjuone",
         score: 5583,
       },
       {
         id: 3,
-        name: 'slr4tone',
+        name: "slr4tone",
         score: 42375,
       },
       {
         id: 4,
-        name: 'slt23one',
+        name: "slt23one",
         score: 12324,
       },
       {
         id: 5,
-        name: 'slton343e',
+        name: "slton343e",
         score: 83732,
       },
     ];

@@ -1,28 +1,28 @@
-import { lazy } from 'react';
+import { lazy } from "react";
 
 export const routes = [
   {
-    path: '/home',
-    component: lazy(() => import('@src/pages/home')),
+    path: "/home",
+    component: lazy(() => import("@src/pages/home")),
   },
   {
-    path: '/about',
-    component: lazy(() => import('@src/pages/about')),
+    path: "/about",
+    component: lazy(() => import("@src/pages/about")),
   },
   {
-    path: '/getting-started',
-    component: lazy(() => import('@src/pages/getting-started')),
+    path: "/getting-started",
+    component: lazy(() => import("@src/pages/getting-started")),
   },
   {
-    path: '/api',
-    component: lazy(() => import('@src/pages/public-api')),
+    path: "/api",
+    component: lazy(() => import("@src/pages/public-api")),
   },
   {
-    path: '/signup',
-    component: lazy(() => import('@src/pages/signup')),
+    path: "/signup",
+    component: lazy(() => import("@src/pages/signup")),
   },
   {
-    path: '/signin',
-    component: lazy(() => import('@src/pages/signin')),
+    path: "/signin",
+    component: lazy(() => import("@src/pages/signin")),
   },
 ];

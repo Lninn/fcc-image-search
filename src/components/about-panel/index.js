@@ -1,9 +1,9 @@
-import React from 'react';
-import Panel from '@components/panel';
+import React from "react";
+import Panel from "@components/panel";
 
 function Index() {
   return (
-    <Panel header='关于' className="about-panel">
+    <Panel header="关于" className="about-panel">
       <p>CNode：Node.js专业中文社区</p>
 
       <p>在这里你可以：</p>
