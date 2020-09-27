@@ -18,7 +18,7 @@ function Index() {
   });
 
   return (
-    <Panel header="无人回复的话题">
+    <Panel header="无人回复的话题" className='no-reply-topics-panel'>
       <ul>
         {topics.map(topic => {
           return (
