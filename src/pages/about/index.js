@@ -2,7 +2,6 @@ import React from 'react';
 import Panel from '@src/components/panel';
 import PagePanelTitle from '@src/components/page-panel-title';
 import ContentCard from '@src/components/content-card';
-import './index.less';
 
 function Index() {
   return (
