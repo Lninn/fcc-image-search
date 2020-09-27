@@ -1,5 +1,6 @@
 body {
   background: #e1e1e1;
+  color: #333;
   font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,sans-serif!important;
 }
 
@@ -62,5 +63,46 @@ body {
       line-height: 2em;
       display: list-item;
     }
+  }
+}
+
+.content-card {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  &:first-child {
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    font-size: 24.5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-size: 16px;
+    line-height: 1.75;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    color: #08c;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 250px;
+    height: 60px;
   }
 }
