@@ -6,6 +6,7 @@ function Index() {
       <div className='footer-content'>
         <div className='links'>
           <a href='/'>RSS</a>
+          <span>|</span>
           <a href='/'>源码地址</a>
         </div>
         
@@ -23,7 +24,7 @@ function Index() {
 
         <p>
           新手搭建 Node.js 服务器，推荐使用无需备案的
-          <a href="https://www.digitalocean.com/?refcode=eba02656eeb3">
+          <a className='link' href="https://www.digitalocean.com/?refcode=eba02656eeb3">
             DigitalOcean(https://www.digitalocean.com/)
           </a>
         </p>
