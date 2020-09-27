@@ -1,33 +1,28 @@
-import Home from './pages/home';
-import About from './pages/about';
-import GettingStarted from './pages/getting-started';
-import PublicApi from './pages/public-api';
-import Signin from './pages/signin';
-import Signup from './pages/signup';
+import { lazy } from 'react';
 
 export const routes = [
   {
     path: '/home',
-    component: Home,
+    component: lazy(() => import('@src/pages/home')),
   },
   {
     path: '/about',
-    component: About,
+    component: lazy(() => import('@src/pages/about')),
   },
   {
     path: '/getting-started',
-    component: GettingStarted,
+    component: lazy(() => import('@src/pages/getting-started')),
   },
   {
     path: '/api',
-    component: PublicApi,
+    component: lazy(() => import('@src/pages/public-api')),
   },
   {
     path: '/signup',
-    component: Signup,
+    component: lazy(() => import('@src/pages/signup')),
   },
   {
     path: '/signin',
-    component: Signin,
+    component: lazy(() => import('@src/pages/signin')),
   },
 ];

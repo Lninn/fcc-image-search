@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,18 +15,20 @@ function App() {
     <div className="App">
       <Router>
         <Layout>
-            <Switch>
-              {routes.map((route, i) => (
-                <Route
-                  key={i}
-                  path={route.path}
-                  render={props => (
-                    <route.component {...props} />
-                  )}
-                />
-              ))}
-              <Redirect from="/" to="/home" />
-            </Switch>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Switch>
+                {routes.map((route, i) => (
+                  <Route
+                    key={i}
+                    path={route.path}
+                    render={props => (
+                      <route.component {...props} />
+                    )}
+                  />
+                ))}
+                <Redirect from="/" to="/home" />
+              </Switch>
+            </Suspense>
         </Layout>
       </Router>
     </div>
