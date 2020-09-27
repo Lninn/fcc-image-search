@@ -7,9 +7,13 @@ import SiderBar from '@components/side-bar';
 function Index({ children }) {
   return (
     <div className="layout">
-      <Header />
+      <header className="app-header">
+        <Header />
+      </header>
       <div className="content-wrapper">
-        <SiderBar />
+        <aside className="side-bar">
+          <SiderBar />
+        </aside>
         <main className="main-content">
           {children}
         </main>

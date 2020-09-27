@@ -1,10 +1,63 @@
 .layout {
+  height: calc(100vh - 257px);
+
+  .app-header {
+    background: #444;
+
+    .app-header-inner {
+      width: 90%;
+      // min-width: 960px;
+      max-width: 1440px;
+      margin: auto;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+
+      .logo {
+        display: inline-block;
+        height: 34px;
+        width: 120px;
+      }
+
+      .search-form {
+        margin-left: 20px;
+        input {
+          color: #666;
+          outline: none;
+          border: none;
+          border-radius: 24px;
+          padding: 3px 5px 3px 12px;
+          background-color: #888;
+
+          &:focus {
+            background-color: #fff;
+          }
+        }
+      }
+
+      .menu-wrapper {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        .menu {
+          a {
+            padding: 10px 15px;
+            color: #ccc;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
   .content-wrapper {
     width: 90%;
     margin: auto;
     max-width: 1440px;
-    min-height: 400px;
+    min-height: 100%;
     margin-top: 15px;
+    margin-bottom: 40px;
 
     .main-content {
       margin-right: 310px;
@@ -18,8 +71,6 @@
 
   .footer {
     background: #ffffff;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 
     .footer-content {

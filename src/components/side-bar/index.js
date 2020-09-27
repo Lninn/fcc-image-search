@@ -10,7 +10,7 @@ import AboutPanel from '@components/about-panel';
 
 function Index() {
   return (
-    <aside className="side-bar">
+    <>
       <TitlePanel />
       <AdPanel />
       <NoRepliesTopicPanel />
@@ -18,7 +18,7 @@ function Index() {
       <RankingPanel />
       <QRcodePanel />
       <AboutPanel />
-    </aside>
+    </>
   );
 }
 
