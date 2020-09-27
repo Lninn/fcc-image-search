@@ -13,11 +13,11 @@ function Index() {
 
         <div className='ad'>
           <span>服务器赞助商为</span>
-          <img src='https://static.cnodejs.org/FuIpEaM9bvsZKnQ3QfPtBHWQmLM9' />
+          <img src='https://static.cnodejs.org/FuIpEaM9bvsZKnQ3QfPtBHWQmLM9' alt='ad img' />
           <span>储存赞助商为</span>
-          <img src='https://static.cnodejs.org/Fg0jtDIcTqVC049oVu5-sn6Om4NX' />
+          <img src='https://static.cnodejs.org/Fg0jtDIcTqVC049oVu5-sn6Om4NX' alt='ad img' />
           <span>由</span>
-          <img src='https://static.cnodejs.org/FpMZk31PDyxkC8yStmMQL4XroaGD' />
+          <img src='https://static.cnodejs.org/FpMZk31PDyxkC8yStmMQL4XroaGD' alt='ad img' />
           <span>提供应用性能服务。</span>
         </div>
 
