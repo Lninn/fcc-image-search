@@ -56,17 +56,22 @@
     margin: auto;
     max-width: 1440px;
     min-height: 100%;
+
     margin-top: 15px;
     margin-bottom: 40px;
+    
+    display: grid;
+    grid-template-columns: 1fr 290px;
+    gap: 15px;
 
     .main-content {
-      margin-right: 310px;
+      // https://stackoverflow.com/questions/38223879/white-space-nowrap-breaks-flexbox-layout
+      min-width: 0;
     }
 
-    .side-bar {
-      width: 290px;
-      float: right;
-    }
+    // .side-bar {
+    //   width: 290px;
+    // }
   }
 
   .footer {

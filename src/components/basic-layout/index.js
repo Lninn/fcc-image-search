@@ -11,12 +11,13 @@ function Index({ children }) {
         <Header />
       </header>
       <div className="content-wrapper">
-        <aside className="side-bar">
-          <SiderBar />
-        </aside>
+        
         <main className="main-content">
           {children}
         </main>
+        <aside className="side-bar">
+          <SiderBar />
+        </aside>
       </div>
       <Footer />
     </div>
