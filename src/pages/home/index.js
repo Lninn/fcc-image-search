@@ -16,9 +16,9 @@ function Index() {
       const data = JSON.parse(localStorage.getItem(TOPIC_LIST));
       if (data && data.length) {
         return data;
-      } else {
-        return [];
       }
+
+      return [];
     } catch (error) {
       return [];
     }
