@@ -5,9 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import "./App.less";
 import { Layout } from "@components";
-
 import { routes } from "./router";
 
 function App() {

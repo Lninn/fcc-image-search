@@ -1,6 +1,5 @@
 import React from "react";
-import { Panel } from "@components";
-import { PagePanelTitle, ContentCard } from "@components";
+import { Panel, PagePanelTitle, ContentCard } from "@components";
 
 function Index() {
   return (

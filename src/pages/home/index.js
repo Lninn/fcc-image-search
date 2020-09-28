@@ -1,10 +1,9 @@
 import React from "react";
-import "./index.less";
-import { Panel } from "@components";
-import Cell from "@components/topic-cell";
+import { Panel, Cell } from "@components";
 import classNames from "classnames";
 import { queryTopics } from "@services";
 import { AppContext } from "@src";
+import "./index.less";
 
 const TOPIC_LIST = "TOPIC_LIST";
 

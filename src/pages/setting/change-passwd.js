@@ -1,6 +1,5 @@
 import React from "react";
-import { FormItem } from "@src/components";
-import { Button } from "@src/components";
+import { FormItem, Button } from "@src/components";
 
 function Index({ onSubmit }) {
   function _onSubmit(e) {

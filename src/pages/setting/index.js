@@ -1,13 +1,11 @@
 import React from "react";
-import { Panel } from "@components";
-import PagePanelTitle from "@components/page-panel-title";
-import Button from "@components/button";
+import { Panel, Button, PagePanelTitle } from "@components";
 import UserForm from "./user-form";
 import ChangePasswd from "./change-passwd";
 
 function Index() {
   return (
-    <div className="signup-page">
+    <div className="setting-page">
       <Panel header={<PagePanelTitle pageTitle="设置" />}>
         <UserForm />
       </Panel>

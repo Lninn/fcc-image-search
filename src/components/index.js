@@ -16,6 +16,7 @@ import Header from "./header";
 import Footer from "./footer";
 import SideBar from "./side-bar";
 import Layout from "./basic-layout";
+import Cell from "./topic-cell";
 
 export {
   Panel,
@@ -34,4 +35,5 @@ export {
   Footer,
   SideBar,
   Layout,
+  Cell,
 };

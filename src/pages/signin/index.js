@@ -1,8 +1,7 @@
 import React from "react";
-import { Panel } from "@components";
-import PagePanelTitle from "@components/page-panel-title";
-import "./index.less";
+import { Panel, PagePanelTitle } from "@components";
 import LoginForm from "./login-form";
+import "./index.less";
 
 function Index() {
   const [error, setError] = React.useState(false);

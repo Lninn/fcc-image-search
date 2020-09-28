@@ -1,4 +1,25 @@
 .signin-page {
+  .error-message {
+    color: #b94a48;
+    background: #f2dede;
+    border: 1px solid #eed3d7;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 8px 35px 8px 14px;
+    position: relative;
+    visibility: hidden;
+
+    &::before {
+      content: "x";
+      color: #778087;
+      font-size: 20px;
+      line-height: 20px;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      right: 10px;
+    }
+  }
 
   .login-from {
     margin-top: 40px;

@@ -1,6 +1,6 @@
 import React from "react";
-import { Panel } from "@components";
-import { PagePanelTitle, ContentCard } from "@components";
+import { Panel, PagePanelTitle, ContentCard } from "@components";
+import "./index.less";
 
 function Index() {
   const content = React.useMemo(() => {
