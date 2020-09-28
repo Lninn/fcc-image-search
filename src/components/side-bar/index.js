@@ -26,6 +26,7 @@ function Index() {
       );
     case "/getting-started":
     case "/about":
+    case "/setting":
       return (
         <>
           <TitlePanel />

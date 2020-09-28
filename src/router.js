@@ -25,4 +25,8 @@ export const routes = [
     path: "/signin",
     component: lazy(() => import("@src/pages/signin")),
   },
+  {
+    path: "/setting",
+    component: lazy(() => import("@src/pages/setting")),
+  },
 ];

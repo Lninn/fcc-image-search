@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from '@src/components/button';
+import FormItem from '@src/components/form-item';
 
 function Index({ onSubmit }) {
   const [username, setUsername] = React.useState("");
@@ -14,38 +15,26 @@ function Index({ onSubmit }) {
 
   return (
     <form onSubmit={_onSubmit} className="login-from">
-      <div className="control-group">
-        <div className="control-label">
-          <label htmlFor="username">用户名</label>
-        </div>
-        <div className="control-input">
-          <input
-            id="username"
-            type="text"
-            maxLength="30"
-            autoComplete="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
-      </div>
+      <FormItem name="username" label="用户名">
+        <input
+          type="text"
+          maxLength="30"
+          autoComplete="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </FormItem>
 
-      <div className="control-group">
-        <div className="control-label">
-          <label htmlFor="password">密码</label>
-        </div>
-        <div className="control-input">
-          <input
-            id="password"
-            type="password"
-            autoComplete="current-password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-      </div>
+      <FormItem name="password" label="密码">
+        <input
+          type="password"
+          autoComplete="current-password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </FormItem>
 
-      <div className="control-group group-btn">
+      <div className="form-item group-btn">
         <Button className="login-btn">登 录</Button>
         <Button className="login-github-btn">通过 Github 登录</Button>
         <Link to="/forget-passwd" className="forget-passwd">
