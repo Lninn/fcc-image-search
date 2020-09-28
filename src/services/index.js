@@ -7,6 +7,15 @@ export function queryTopics() {
   return request(url);
 }
 
+export function queryAuth() {
+  return new Promise((resolve) => {
+    resolve({
+      status: true,
+      data: null
+    });
+  });
+}
+
 export function queryRankingScore() {
   return new Promise((resolve) => {
     const list = [

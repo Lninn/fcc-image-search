@@ -1,5 +1,6 @@
 import React from "react";
 import Panel from "@components/panel";
+import Button from '@src/components/button';
 import { Link } from "react-router-dom";
 
 function Index() {
@@ -16,7 +17,7 @@ function Index() {
         <Link to="/signin">登陆</Link>
         <span>, 也可以</span>
       </div>
-      <button>通过 GitHub 登陆</button>
+      <Button className="login-github-btn" style={{ marginTop: 6 }}>通过 GitHub 登陆</Button>
     </Panel>
   );
 }

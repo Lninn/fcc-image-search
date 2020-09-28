@@ -25,16 +25,6 @@ body {
   a {
     color: #778087;
   }
-  
-  button {
-    padding: 3px 10px;
-    background: #5bc0de;
-    letter-spacing: 2px;
-    line-height: 2em;
-    color: #fff;
-    border-radius: 3px;
-    margin-top: 6px;
-  }
 }
 
 .ranking-panel {
@@ -133,5 +123,54 @@ body {
   img {
     width: 250px;
     height: 60px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  line-height: 2;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: hsla(0, 0%, 30%, 1);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background: hsla(0, 0%, 10%, 1);
+  }
+
+  & + .btn {
+    margin-left: 10px;
+  }
+}
+
+.login-github-btn {
+  color: #ffffff;
+  background: #5bc0de;
+
+  &:hover {
+    background: #2f96b4;
+  }
+}
+
+.error-message {
+  color: #b94a48;
+  background: #f2dede;
+  border: 1px solid #eed3d7;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 8px 35px 8px 14px;
+  position: relative;
+  visibility: hidden;
+
+  &::before {
+    content: "x";
+    color: #778087;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    right: 10px;
   }
 }
