@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.less";
-import Panel from "@components/panel";
+import { Panel } from "@components";
 import Cell from "@components/topic-cell";
 import classNames from "classnames";
 import { queryTopics } from "@services";

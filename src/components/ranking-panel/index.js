@@ -1,5 +1,5 @@
 import React from "react";
-import Panel from "@components/panel";
+import { Panel } from "@components";
 import { Link } from "react-router-dom";
 import { queryRankingScore } from "@services";
 

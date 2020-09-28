@@ -6,7 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import "./App.less";
-import Layout from "./components/basic-layout";
+import { Layout } from "@components";
 
 import { routes } from "./router";
 

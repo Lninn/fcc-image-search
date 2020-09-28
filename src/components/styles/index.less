@@ -1,0 +1,225 @@
+@import "./layout.less";
+@import "./topic-cell.less";
+
+.panel {
+  font-size: 13px;
+
+  .header {
+    border-radius: 3px 3px 0 0;
+    background: #f6f6f6;
+    color: #444;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    background: #fff;
+  }
+
+  & + .panel {
+    margin-top: 13px;
+  }
+}
+
+.page-panel-title {
+  a {
+    color: #80bd01;
+  }
+
+  .divider {
+    padding: 0 5px;
+  }
+
+  .title {
+    color: #999;
+  }
+}
+
+.title-panel {
+  a {
+    color: #778087;
+  }
+}
+
+.ranking-panel {
+  ol {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: block;
+      color: gray;
+      line-height: 2em;
+
+      span {
+        display: inline-block;
+        width: 60px;
+      }
+    }
+  }
+}
+
+.about-panel {
+  p {
+    margin-bottom: 1em;
+  }
+
+  ul {
+    li {
+      line-height: 2em;
+      display: list-item;
+    }
+  }
+}
+
+.no-reply-topics-panel {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.content-card {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  &:first-child {
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    font-size: 24.5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 17.5px;
+    border-bottom: 1px solid #eee;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 2em;
+  }
+
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-size: 15px;
+    line-height: 1.75;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  a {
+    color: #08c;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 250px;
+    height: 60px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  line-height: 2;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: hsla(0, 0%, 30%, 1);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: hsla(0, 0%, 10%, 1);
+  }
+
+  & + .btn {
+    margin-left: 10px;
+  }
+}
+
+.login-github-btn {
+  color: #ffffff;
+  background: #5bc0de;
+
+  &:hover {
+    background: #2f96b4;
+  }
+}
+
+.form-item {
+  display: flex;
+  font-size: 14px;
+  line-height: 32px;
+
+  & + .form-item {
+    margin-top: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
+
+  .item-label {
+    width: 160px;
+    text-align: right;
+  }
+
+  .item-input {
+    margin-left: 20px;
+
+    input {
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      width: 300px;
+      font-size: 14px;
+      line-height: 2em;
+
+      &:focus {
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px rgba(82, 168, 236, 0.6);
+        border-color: rgba(82, 168, 236, 0.8);
+      }
+    }
+
+    textarea {
+      outline: none;
+      width: 300px;
+      height: 120px;
+      border: 1px solid #e1e1e1;
+      display: inline-block;
+    }
+  }
+
+  .login-btn {
+    color: #fff;
+    background: #08c;
+    margin-left: 180px;
+
+    &:hover {
+      background: #05c;
+    }
+  }
+
+  .forget-passwd {
+    margin-left: 10px;
+    color: #778087;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

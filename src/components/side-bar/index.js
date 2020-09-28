@@ -1,13 +1,14 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "./index.less";
-import TitlePanel from "@components/title-panel";
-import AdPanel from "@components/ad-panel";
-import NoRepliesTopicPanel from "@components/no-replies-topic-panel";
-import QRcodePanel from "@components/qrcode-panel";
-import FriendlyCommunityPanel from "@components/friendly-community-panel";
-import RankingPanel from "@components/ranking-panel";
-import AboutPanel from "@components/about-panel";
+import {
+  TitlePanel,
+  AdPanel,
+  RankingPanel,
+  AboutPanel,
+  NoRepliesTopicPanel,
+  FriendlyCommunityPanel,
+  QRcodePanel,
+} from "@components";
 
 function Index() {
   const { pathname } = useLocation();

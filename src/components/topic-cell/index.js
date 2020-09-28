@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.less";
 import classNames from "classnames";
 
 function Index({ topic }) {

@@ -60,8 +60,8 @@ function Index(props) {
     },
   ];
 
-  // const menus = props.auth ? authMenus : publicMenus;
-  const menus = true ? authMenus : publicMenus;
+  const menus = props.auth ? authMenus : publicMenus;
+  // const menus = true ? authMenus : publicMenus;
 
   return (
     <div className="app-header-inner">

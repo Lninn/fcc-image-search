@@ -1,6 +1,5 @@
 import React from "react";
 import classNames from "classnames";
-import "./index.less";
 
 function Index(props) {
   const { header, children, contentStyle, className, ...rest } = props;

@@ -1,6 +1,5 @@
 import React from "react";
-import Panel from "@components/panel";
-import Button from "@src/components/button";
+import { Panel, Button } from "@components";
 import { Link } from "react-router-dom";
 
 function Index() {

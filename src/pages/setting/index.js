@@ -1,5 +1,5 @@
 import React from "react";
-import Panel from "@components/panel";
+import { Panel } from "@components";
 import PagePanelTitle from "@components/page-panel-title";
 import Button from "@components/button";
 import UserForm from "./user-form";

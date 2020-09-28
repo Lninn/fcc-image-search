@@ -1,8 +1,5 @@
 import React from "react";
-import "./index.less";
-import Header from "@components/header";
-import Footer from "@components/footer";
-import SiderBar from "@components/side-bar";
+import { Header, Footer, SideBar } from "@components";
 
 function Index({ children }) {
   return (
@@ -13,7 +10,7 @@ function Index({ children }) {
       <div className="content-wrapper">
         <main className="main-content">{children}</main>
         <aside className="side-bar">
-          <SiderBar />
+          <SideBar />
         </aside>
       </div>
       <Footer />

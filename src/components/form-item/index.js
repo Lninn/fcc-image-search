@@ -2,7 +2,7 @@ import React from "react";
 
 function Index({ name, label, children }) {
   const pre = "basic";
-  const id = pre + "-" + name;
+  const id = `${pre}-${name}`;
 
   const childrenWithProps = React.Children.map(children, function (child) {
     const props = { id };

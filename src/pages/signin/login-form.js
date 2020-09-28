@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "@src/components/button";
-import FormItem from "@src/components/form-item";
+import { Button, FormItem } from "@src/components";
 
 function Index({ onSubmit }) {
   const [username, setUsername] = React.useState("");
