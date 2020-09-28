@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Index() {
-  const menus = [
+function Index(props) {
+  const publicMenus = [
     {
       name: "首页",
       path: "/home",
@@ -28,6 +28,40 @@ function Index() {
       path: "/signup",
     },
   ];
+
+  const authMenus = [
+    {
+      name: "首页",
+      path: "/home",
+    },
+    {
+      name: '未读消息',
+      path: "/unread-message",
+    },
+    {
+      name: "新手入门",
+      path: "/getting-started",
+    },
+    {
+      name: "API",
+      path: "/api",
+    },
+    {
+      name: "关于",
+      path: "/about",
+    },
+    {
+      name: "设置",
+      path: "setting",
+    },
+    {
+      name: "退出",
+      path: "/exit",
+    },
+  ];
+
+  // const menus = props.auth ? authMenus : publicMenus;
+  const menus = true ? authMenus : publicMenus;
 
   return (
     <div className="app-header-inner">
