@@ -11,7 +11,7 @@ export function queryAuth() {
   return new Promise((resolve) => {
     resolve({
       status: true,
-      data: null
+      data: null,
     });
   });
 }

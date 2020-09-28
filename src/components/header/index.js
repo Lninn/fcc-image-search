@@ -35,7 +35,7 @@ function Index(props) {
       path: "/home",
     },
     {
-      name: '未读消息',
+      name: "未读消息",
       path: "/unread-message",
     },
     {

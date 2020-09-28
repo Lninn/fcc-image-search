@@ -2,8 +2,8 @@ import React from "react";
 import Panel from "@components/panel";
 import PagePanelTitle from "@components/page-panel-title";
 import Button from "@components/button";
-import UserForm from './user-form';
-import ChangePasswd from './change-passwd';
+import UserForm from "./user-form";
+import ChangePasswd from "./change-passwd";
 
 function Index() {
   return (

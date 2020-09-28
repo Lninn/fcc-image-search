@@ -1,6 +1,6 @@
 import React from "react";
-import FormItem from '@src/components/form-item';
-import Button from '@src/components/button';
+import FormItem from "@src/components/form-item";
+import Button from "@src/components/button";
 
 function Index({ onSubmit }) {
   function _onSubmit(e) {
@@ -10,17 +10,11 @@ function Index({ onSubmit }) {
   return (
     <form style={{ marginTop: 20 }} onSubmit={_onSubmit} className="user-from">
       <FormItem name="password" label="当前密码">
-        <input
-          type="password"
-          autoComplete="current-password"
-        />
+        <input type="password" autoComplete="current-password" />
       </FormItem>
 
       <FormItem name="new-password" label="新密码">
-        <input
-          type="password"
-          autoComplete="current-password"
-        />
+        <input type="password" autoComplete="current-password" />
       </FormItem>
 
       <FormItem>

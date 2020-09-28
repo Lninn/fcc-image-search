@@ -2,7 +2,7 @@ import React from "react";
 import Panel from "@components/panel";
 import PagePanelTitle from "@components/page-panel-title";
 import "./index.less";
-import LoginForm from './login-form';
+import LoginForm from "./login-form";
 
 function Index() {
   const [error, setError] = React.useState(false);
@@ -13,17 +13,20 @@ function Index() {
     }
   }
 
-  const v = error ? 'visible' : 'hidden';
+  const v = error ? "visible" : "hidden";
 
   return (
     <div className="signin-page">
       <Panel header={<PagePanelTitle pageTitle="登陆" />}>
-        {<div
+        {
+          <div
             className="error-message"
             style={{ visibility: v }}
             onClick={() => setError(false)}
-          >{error}
-        </div>}
+          >
+            {error}
+          </div>
+        }
         <LoginForm onSubmit={handleSubmit} />
       </Panel>
     </div>

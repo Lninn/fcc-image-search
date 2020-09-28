@@ -1,14 +1,13 @@
 import React from "react";
-import classNames from 'classnames';
+import classNames from "classnames";
 
 function Index({ children, className, ...rest }) {
-  const cls = classNames(
-    'btn',
-    className
-  );
+  const cls = classNames("btn", className);
 
   return (
-    <button {...rest} className={cls}>{children}</button>
+    <button {...rest} className={cls}>
+      {children}
+    </button>
   );
 }
 

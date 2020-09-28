@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from '@src/components/button';
-import FormItem from '@src/components/form-item';
+import Button from "@src/components/button";
+import FormItem from "@src/components/form-item";
 
 function Index({ onSubmit }) {
   const [username, setUsername] = React.useState("");
@@ -9,7 +9,7 @@ function Index({ onSubmit }) {
 
   function _onSubmit(e) {
     e.preventDefault();
-    
+
     onSubmit({ username, password });
   }
 

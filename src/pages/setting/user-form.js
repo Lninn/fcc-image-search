@@ -1,13 +1,13 @@
 import React from "react";
-import FormItem from '@src/components/form-item';
-import Button from '@src/components/button';
+import FormItem from "@src/components/form-item";
+import Button from "@src/components/button";
 
 function Index({ onSubmit }) {
   const [username, setUsername] = React.useState("");
 
   function _onSubmit(e) {
     e.preventDefault();
-    
+
     if (onSubmit) {
       onSubmit({ username });
     }
@@ -26,33 +26,23 @@ function Index({ onSubmit }) {
       </FormItem>
 
       <FormItem name="email" label="电子邮件">
-        <input
-          type="email"
-        />
+        <input type="email" />
       </FormItem>
 
       <FormItem name="site" label="个人网站">
-        <input
-          type="text"
-        />
+        <input type="text" />
       </FormItem>
 
       <FormItem name="address" label="所在地点">
-        <input
-          type="text"
-        />
+        <input type="text" />
       </FormItem>
 
       <FormItem name="weibo" label="微博">
-        <input
-          type="text"
-        />
+        <input type="text" />
       </FormItem>
 
       <FormItem name="github" label="Github">
-        <input
-          type="text"
-        />
+        <input type="text" />
       </FormItem>
 
       <FormItem name="content" label="个性签名">
