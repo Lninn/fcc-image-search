@@ -7,7 +7,7 @@ function Index({ onSubmit }) {
   }
 
   return (
-    <form style={{ marginTop: 20 }} onSubmit={_onSubmit} className="user-from">
+    <form onSubmit={_onSubmit} className="user-from">
       <FormItem name="password" label="当前密码">
         <input type="password" autoComplete="current-password" />
       </FormItem>
@@ -17,7 +17,7 @@ function Index({ onSubmit }) {
       </FormItem>
 
       <FormItem>
-        <Button>更 改 密 码</Button>
+        <Button>更改密码</Button>
       </FormItem>
     </form>
   );

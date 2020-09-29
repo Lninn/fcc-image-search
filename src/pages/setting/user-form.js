@@ -13,7 +13,7 @@ function Index({ onSubmit }) {
   }
 
   return (
-    <form style={{ marginTop: 20 }} onSubmit={_onSubmit} className="user-from">
+    <form onSubmit={_onSubmit} className="user-from">
       <FormItem name="username" label="用户名">
         <input
           type="text"

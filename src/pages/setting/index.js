@@ -2,6 +2,7 @@ import React from "react";
 import { Panel, Button, PagePanelTitle } from "@components";
 import UserForm from "./user-form";
 import ChangePasswd from "./change-passwd";
+import "./index.less";
 
 function Index() {
   return (
