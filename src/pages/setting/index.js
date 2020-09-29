@@ -5,10 +5,20 @@ import ChangePasswd from "./change-passwd";
 import "./index.less";
 
 function Index() {
+  const [user] = React.useState({
+    username: "Bixxxy",
+    email: "example@mail.com",
+    site: "personsite.com",
+    address: "",
+    weibo: "example@weibo.com",
+    github: "example@github.com",
+    signature: "",
+  });
+
   return (
     <div className="setting-page">
       <Panel header={<PagePanelTitle pageTitle="设置" />}>
-        <UserForm />
+        <UserForm user={user} />
       </Panel>
 
       <Panel header="更改密码">
